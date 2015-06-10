@@ -1,0 +1,14 @@
+<nav>
+	<ul class="nav-menu">
+		<li><a href="{{ site.url }}/">Home</a></li>
+		{% for link in site.data.navigation %}
+		    {% if link.url contains 'http' %}
+			{% assign domain = '' %}
+			{% else %}
+			{% assign domain = site.url %}
+		    {% endif %}
+	    	<li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+	  	{% endfor %}
+	</ul>
+</nav>
+
