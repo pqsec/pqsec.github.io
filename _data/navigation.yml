@@ -1,16 +1,14 @@
 # Menu navigation links
 
-- title: OpenSSL DSTU 4145-2002
+- title: Blog
+  url: /posts/
+
+- title: OpenSSL UA
   url: /theme-setup/
 
-- title: DSTU VPN
+- title: OpenVPN UA
   url: /theme-setup/
 
-- title: DSTU SSL/TLS wrapper
+- title: Stunnel UA
   url: /theme-setup/
 
-- title: External Link
-  url: http://mademistakes.com
-
-- title: External Link with very long name
-  url: http://mademistakes.com

@@ -1,17 +1,18 @@
 ---
 layout: page
-title: Open source cryptography for everyone
-description: "Open source cryptography for everyone."
+title: Security for everyone
+description: "Security for everyone."
 tags: [open source, cryptography, crypto, dstu, OpenSSL, security, Ukraine]
 comments: false
 share: false
 ---
 
-# Hello, world!
+# Welcome to [crypto.org.ua](/)
 
-You can find cryptography projects here:
+This project is a collection of resources on security and cryptography and home for some open-source projects. Feel free to explore around. You may find:
 
-* OpenSSL with DSTU-4145-2002 support
-* OpenVPN with DSTU-4145-2002 support
-* STunnel
-* etc
+  * interesting information on security and cryptography in the [Blog](/posts/)
+  * OpenSSL with DSTU-4145 support (Ukrainian national digital signature algorithm)
+  * OpenVPN with DSTU-4145 support
+  * Stunnel with DSTU-4145 support
+  * more coming...
