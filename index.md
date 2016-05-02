@@ -7,7 +7,7 @@ comments: false
 share: false
 ---
 
-# Welcome to [crypto.org.ua](/)
+# Welcome to [pqsec.org](/)
 
 This project is a collection of resources on security and cryptography and home for some open-source projects. Feel free to explore around. You may find:
 
