@@ -1,12 +1,3 @@
----
-layout: page
-title: Security for everyone
-description: "Security for everyone."
-tags: [open source, cryptography, crypto, dstu, OpenSSL, security, Ukraine]
-comments: false
-share: false
----
-
 # Welcome to [pqsec.org](/)
 
 This project is a collection of resources on security and cryptography and home for some open-source projects. Feel free to explore around. You may find:
