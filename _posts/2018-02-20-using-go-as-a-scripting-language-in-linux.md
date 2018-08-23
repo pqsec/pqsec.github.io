@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Using Go as a scripting language in Linux"
+description: February 20th, 2018
+excerpt: "Why use Go as a scripting language? Short answer: why not? Go is relatively easy to learn, not too verbose and there is a huge ecosystem of libraries which can be reused to avoid writing all the code from scratch."
+---
+
 # Using Go as a scripting language in Linux
 
 *This is a repost of my post from [Cloudflare Blog](https://blog.cloudflare.com/using-go-as-a-scripting-language-in-linux/)*
