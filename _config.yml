@@ -1,14 +1,8 @@
 repository: pqsec/pqsec.github.io
 theme: jekyll-theme-cayman
 
-# title: Some articles are just so long they deserve a really long title to see if things will break well
+title: PQSEC.ORG
+description: Ignat Korchagin
 
 github:
   is_project_page: false
-
-gems:
-- jekyll-github-metadata
-- jekyll-mentions
-- jekyll-redirect-from
-- jekyll-sitemap
-- jemoji
