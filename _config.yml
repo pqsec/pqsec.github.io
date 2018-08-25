@@ -3,6 +3,7 @@ theme: jekyll-theme-cayman
 
 title: PQSEC.ORG
 description: Ignat Korchagin
+google_analytics: UA-124589907-1
 
 github:
   is_project_page: false
