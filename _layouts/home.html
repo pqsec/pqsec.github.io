@@ -8,10 +8,10 @@ layout: default
 
   {% for post in site.posts %}
   <hr>
-    <h3>{{ post.date | date: "%b %-d, %Y" }}</h3>
     <h2>
       <a href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
     </h2>
+    <span style="color:#159957">{{ post.date | date: "%b %-d, %Y" }}</span>
     <p>{{ post.excerpt | markdownify }}</p>
   {% endfor %}
 </div>
