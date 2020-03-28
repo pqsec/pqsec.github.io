@@ -7,7 +7,7 @@ excerpt: "Why use Go as a scripting language? Short answer: why not? Go is relat
 
 # Using Go as a scripting language in Linux
 
-*This is a repost of my post from [Cloudflare Blog](https://blog.cloudflare.com/using-go-as-a-scripting-language-in-linux/)*
+*This is a repost of my post from the [Cloudflare Blog](https://blog.cloudflare.com/using-go-as-a-scripting-language-in-linux/)*
 
 At Cloudflare we like Go. We use it in many [in-house software projects](https://blog.cloudflare.com/what-weve-been-doing-with-go/) as well as parts of [bigger pipeline systems](https://blog.cloudflare.com/meet-gatebot-a-bot-that-allows-us-to-sleep/). But can we take Go to the next level and use it as a scripting language for our favourite operating system, Linux?
 ![gopher and tux](https://blog.cloudflare.com/content/images/2018/02/gopher-tux-1.png)
