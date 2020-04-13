@@ -31,7 +31,7 @@ We previously agreed that the third-party vendor software is proprietary, but fo
 
 *customhash.c:*
 
-```C
+```cpp
 #include <stdio.h>
 #include <errno.h>
 
@@ -143,7 +143,7 @@ The above command outputs all the functions our `customhash` tool uses from link
 
 *cryptofix.c*
 
-```C
+```cpp
 #define _GNU_SOURCE /* for RTLD_NEXT */
 #include <dlfcn.h>
 #include <stdio.h>
@@ -215,7 +215,7 @@ So the vendor fixes it and delivers the updated tool (because their code is nice
 
 *customhashv2.c:*
 
-```C
+```cpp
 ...
 static int hash(FILE *f)
 {
@@ -321,7 +321,7 @@ To support arbitrary length files the tool now uses an interface, which processe
 
 *cryptofixv2.c:*
 
-```C
+```cpp
 #define _GNU_SOURCE /* for RTLD_NEXT */
 #include <dlfcn.h>
 #include <stdio.h>
@@ -399,7 +399,7 @@ OK, we're good! Did we cover all possible cases? Here is another potential updat
 
 *customhashv3.c:*
 
-```C
+```cpp
 ...
 static int hash(FILE *f)
 {
@@ -496,7 +496,7 @@ The calling application uses yet another set of function calls to compute the SH
 
 *cryptofixv3.c:*
 
-```C
+```cpp
 #define _GNU_SOURCE /* for RTLD_NEXT */
 #include <dlfcn.h>
 #include <stdio.h>
@@ -575,7 +575,7 @@ But we will abuse the framework a bit: we will write an "alternative" implementa
 
 *sha1-sha256.c:*
 
-```C
+```cpp
 #include <string.h>
 
 #include <openssl/engine.h>
@@ -717,7 +717,7 @@ A better way is to just implement the desired engine configuration in a function
 
 *autoload.c:*
 
-```C
+```cpp
 #define _GNU_SOURCE /* for dladdr and Dl_info */
 #include <dlfcn.h>
 #include <stdio.h>
