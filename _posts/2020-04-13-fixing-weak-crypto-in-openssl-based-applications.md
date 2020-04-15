@@ -141,7 +141,7 @@ $ nm -D ./customhash | grep 'U '
 
 The above command outputs all the functions our `customhash` tool uses from linked dynamic libraries ("U" stands for "uses" probably). Most functions are from `libc`, but `EVP_Digest` and `EVP_sha1` come from OpenSSL (if we google those, we get directed to the OpenSSL online man page). At this point we need to write a small dynamic library, which exports same functions with same signatures, but compute SHA-256 instead. In fact we need to replace only `EVP_Digest` as `EVP_sha1` just returns the internal OpenSSL SHA-1 algorithm ID. One potential implementation might look like below:
 
-*cryptofix.c*
+*cryptofix.c:*
 
 ```cpp
 #define _GNU_SOURCE /* for RTLD_NEXT */
