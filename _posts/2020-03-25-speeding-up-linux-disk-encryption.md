@@ -2,7 +2,7 @@
 layout: post
 title: "Speeding up Linux disk encryption"
 description: March 25th, 2020
-excerpt: "How to double the performance of disk encryption in Linux"
+excerpt: "How to double the performance of disk encryption in Linux."
 ---
 
 # Speeding up Linux disk encryption
