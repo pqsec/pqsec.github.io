@@ -426,7 +426,7 @@ ivsize       : 16
 chunksize    : 16
 ```
 
-Reconfigure the encrypted disk to use our newly loaded module and enable our patched `dm-crypt` flag (we have to use low-level `dmsetup` tool and `cryptsetup` obviously is not aware of our modifications):
+Reconfigure the encrypted disk to use our newly loaded module and enable our patched `dm-crypt` flag (we have to use low-level `dmsetup` tool as `cryptsetup` obviously is not aware of our modifications):
 
 ```bash
 $ sudo dmsetup table encrypted-ram0 --showkeys | sed 's/aes-xts-plain64/capi:xts-aes-xtsproxy-plain64/' | sed 's/$/ 1 force_inline/' | sudo dmsetup reload encrypted-ram0
