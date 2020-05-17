@@ -2,6 +2,7 @@
 layout: post
 title: "Speeding up Linux disk encryption"
 description: "How to double the performance of disk encryption in Linux."
+image: https://blog-cloudflare-com-assets.storage.googleapis.com/2020/03/dm-crypt.png
 ---
 
 # Speeding up Linux disk encryption
