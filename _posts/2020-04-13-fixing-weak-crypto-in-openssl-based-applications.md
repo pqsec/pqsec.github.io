@@ -2,6 +2,7 @@
 layout: post
 title: "Fixing weak crypto in OpenSSL based applications"
 description: "Fixing a proprietary tool, which uses weak cryptography, and learning runtime code patching along the way."
+image: /img/fixing-weak-crypto/rusty-lock.jpg
 ---
 
 # Fixing weak crypto in OpenSSL based applications
