@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Fixing weak crypto in OpenSSL based applications"
-description: April 13th, 2020
-excerpt: "Fixing a proprietary tool, which uses weak cryptography, and learning runtime code patching along the way."
+description: "Fixing a proprietary tool, which uses weak cryptography, and learning runtime code patching along the way."
 ---
 
 # Fixing weak crypto in OpenSSL based applications

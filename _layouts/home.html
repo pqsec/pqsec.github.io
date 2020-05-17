@@ -12,6 +12,6 @@ layout: default
       <a href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
     </h2>
     <span style="color:#159957">{{ post.date | date: "%-d %B %Y" }}</span>
-    <p>{{ post.excerpt | markdownify }}</p>
+    <p>{{ post.description | markdownify }}</p>
   {% endfor %}
 </div>
