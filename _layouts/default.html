@@ -3,8 +3,8 @@
 {% else %}
   {% assign page-title = site.title | escape %}
 {% endif %}
-{% if page.description %}
-  {% assign page-description = page.description | escape %}
+{% if page.layout == "post" %}
+  {% assign page-description = page.date | date: "%-d %B %Y" %}
 {% else %}
   {% assign page-description = site.description | escape %}
 {% endif %}
