@@ -1,5 +1,6 @@
 repository: pqsec/pqsec.github.io
 theme: jekyll-theme-cayman
+url: "https://pqsec.org"
 
 title: PQSEC.ORG
 description: Ignat Korchagin
