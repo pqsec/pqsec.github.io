@@ -7,3 +7,6 @@ google_analytics: UA-124589907-1
 
 github:
   is_project_page: false
+
+plugins:
+  - jekyll-sitemap
