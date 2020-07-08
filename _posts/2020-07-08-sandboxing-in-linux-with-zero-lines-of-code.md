@@ -54,7 +54,7 @@ To see how seccomp can be used in practice, let’s consider a toy example progr
 
 *myos.c:*
 
-```C
+```cpp
 #include <stdio.h>
 #include <sys/utsname.h>
 
@@ -86,7 +86,7 @@ To illustrate seccomp capabilities we will add a “sandbox” function to our p
 
 *myos_raw_seccomp.c:*
 
-```C
+```cpp
 #include <linux/seccomp.h>
 #include <linux/filter.h>
 #include <linux/audit.h>
@@ -183,7 +183,7 @@ Let’s rewrite our program’s `sandbox()` function to use this library instead
 
 *myos_libseccomp.c:*
 
-```C
+```cpp
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
@@ -234,7 +234,7 @@ Our `sandbox()` function not only became shorter and much more readable, but als
 
 It is worth noting we have modified our seccomp policy a bit. In the raw seccomp example above we instructed the kernel to return an error code when the application tries to execute a prohibited syscall. This is good for demonstration purposes, but in most cases a stricter action is required. Just returning an error code and allowing the application to continue gives the potentially malicious code a chance to bypass the policy. There are many syscalls in Linux and some of them do the same or similar things. For example, we might want to prohibit the application to read data from disk, so we deny the [read][man-read] syscall in our policy and tell the kernel to return an error code instead. However, if the application does get exploited, the exploit code/logic might look like below:
 
-```C
+```cpp
 …
 if (-1 == read(fd, buf, count)) {
     /* hm… read failed, but what about pread? */
