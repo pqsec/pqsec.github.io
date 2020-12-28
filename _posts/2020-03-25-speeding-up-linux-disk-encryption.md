@@ -467,6 +467,10 @@ That said, if you think your case is similar and you want to take advantage of t
 
 ![perf-sec](https://blog-cloudflare-com-assets.storage.googleapis.com/2020/03/perf-sec.png)
 
+### Update (October 11, 2020)
+
+The main patch from this blog (in a slightly updated form) has been [merged](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/drivers/md/dm-crypt.c?id=39d42fa96ba1b7d2544db3f8ed5da8fb0d5cb877) into mainline Linux kernel and is available since version 5.9 and onwards. The main difference is the mainline version exposes two flags instead of one, which provide the ability to bypass dm-crypt workqueues for reads and writes independently. For details, see [the official dm-crypt documentation](https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/dm-crypt.html).
+
 [1]: https://www.cloudflare.com/network/
 [2]: https://en.wikibooks.org/wiki/The_Linux_Kernel/Storage
 [3]: https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/
