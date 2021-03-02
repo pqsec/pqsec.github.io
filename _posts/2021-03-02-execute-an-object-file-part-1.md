@@ -35,7 +35,7 @@ For the purposes of this article, let's create a simple toy object file, so we c
 
 *obj.c*:
 
-```C
+```cpp
 int add5(int num)
 {
     return num + 5;
@@ -61,7 +61,7 @@ Now we will try to import the `add5` and `add10` functions from the object file 
 
 *loader.c*:
 
-```C
+```cpp
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
@@ -98,7 +98,7 @@ First, as we established already, we need to load our object file into the proce
 
 *loader.c*:
 
-```C
+```cpp
 ...
 /* for open(2), fstat(2) */
 #include <sys/types.h>
@@ -264,7 +264,7 @@ Let's start by adding some more global variables and implementing the `parse_obj
 
 *loader.c*:
 
-```C
+```cpp
 ...
 
 /* sections table */
@@ -298,7 +298,7 @@ Now that we have references to both the sections table and the `.shstrtab` secti
 
 *loader.c*:
 
-```C
+```cpp
 ...
 
 static const Elf64_Shdr *lookup_section(const char *name)
@@ -331,7 +331,7 @@ Using our new helper function, we can now find the `.symtab` and `.strtab` secti
 
 *loader.c*:
 
-```C
+```cpp
 ...
 
 static void parse_obj(void)
@@ -374,7 +374,7 @@ To create a page aligned copy of the `.text` section, first we actually need to 
 
 *loader.c*:
 
-```C
+```cpp
 ...
 
 static uint64_t page_size;
@@ -410,7 +410,7 @@ Here is the implementation of the above steps:
 
 *loader.c*:
 
-```C
+```cpp
 ...
 
 /* runtime base address of the imported code */
@@ -453,7 +453,7 @@ Now we have all the pieces we need to locate the address of a function. Let's wr
 
 *loader.c*:
 
-```C
+```cpp
 ...
 
 static void *lookup_function(const char *name)
@@ -490,7 +490,7 @@ And finally we can implement the `execute_funcs` function to import and execute 
 
 *loader.c*:
 
-```C
+```cpp
 ...
 
 static void execute_funcs(void)
