@@ -761,7 +761,7 @@ This time we can successfully import functions that reference static constant da
  
 In the next post, we will look into importing and executing object code with references to external libraries. Stay tuned!
  
-[part-1]: https://blog.cloudflare.com/how-to-execute-an-object-file-part-1/
+[part-1]: https://pqsec.org/2021/03/02/execute-an-object-file-part-1.html
 [part-1-src]: https://github.com/cloudflare/cloudflare-blog/tree/master/2021-03-obj-file/1
 [man-objdump]: https://man7.org/linux/man-pages/man1/objdump.1.html
 [callq]: https://www.felixcloutier.com/x86/call

@@ -532,7 +532,7 @@ Executing add10...
 add10(42) = 52
 ```
 
-Voila! We have successfully imported code from `obj.o` and executed it. Of course, the example above is simplified: the code in the object file is self-contained, does not reference any global variables or constants, and does not have any external dependencies. In future posts we will look into more complex code and how to handle such cases.
+Voila! We have successfully imported code from `obj.o` and executed it. Of course, the example above is simplified: the code in the object file is self-contained, does not reference any global variables or constants, and does not have any external dependencies. [In future posts][part-2] we will look into more complex code and how to handle such cases.
 
 #### Security considerations
 
@@ -548,3 +548,4 @@ The complete source code from this post can be found [here][post-src].
 [wiki-mem-page]: https://en.wikipedia.org/wiki/Page_(computer_memory)
 [elf-relocations]: https://refspecs.linuxbase.org/elf/gabi4+/ch4.reloc.html
 [post-src]: https://github.com/cloudflare/cloudflare-blog/tree/master/2021-03-obj-file/1
+[part-2]: https://pqsec.org/2021/04/02/execute-an-object-file-part-2.html
