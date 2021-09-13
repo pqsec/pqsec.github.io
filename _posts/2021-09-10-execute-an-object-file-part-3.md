@@ -15,7 +15,7 @@ In the [part 2 of our series][part-2] we learned how to process relocations in o
  
 *obj.c*:
  
-```C
+```cpp
 #include <stdio.h>
  
 ...
@@ -30,7 +30,7 @@ In the above scenario our `say_hello` function now depends on the `puts` [functi
  
 *loader.c*:
  
-```C
+```cpp
 ...
  
 static void execute_funcs(void)
@@ -115,7 +115,7 @@ So how do we resolve this relocation? We need to somehow point the code to jump 
  
 *loader.c*:
  
-```C
+```cpp
 ...
  
 /* external dependencies for obj.o */
@@ -147,7 +147,7 @@ For learning and demonstrative purposes though we will not be reimplementing a f
  
 *loader.c*:
  
-```C
+```cpp
 ...
  
 /* number of external symbols in the symbol table */
@@ -183,7 +183,7 @@ Next we need to decide the actual size in bytes for our jumptable. `num_ext_symb
  
 *loader.c*:
  
-```C
+```cpp
 ...
  
 struct ext_jump {
@@ -205,7 +205,7 @@ Now that we have defined the entry format for our jumptable, we can allocate and
  
 *loader.c*:
  
-```C
+```cpp
 ...
  
 static void parse_obj(void)
@@ -224,7 +224,7 @@ Next we need to allocate memory for the jumptable and store the pointer in the `
  
 *loader.c*:
  
-```C
+```cpp
 ...
  
 static void parse_obj(void)
@@ -258,7 +258,7 @@ Finally, because the CPU will actually be executing the jump instructions from o
  
 *loader.c*:
  
-```C
+```cpp
 ...
  
 static void parse_obj(void)
@@ -282,7 +282,7 @@ At this stage we have our jumptable allocated and usable — all is left to do i
  
 *loader.c*:
  
-```C
+```cpp
 ...
  
 static void do_text_relocations(void)
@@ -302,7 +302,7 @@ Currently we try to determine the runtime symbol address for the relocation by l
  
 *loader.c*:
  
-```C
+```cpp
 ...
  
 static void do_text_relocations(void)
@@ -347,7 +347,7 @@ The only missing bit here now is the implementation of the newly introduced `loo
  
 *loader.c*:
  
-```C
+```cpp
 ...
  
 static void *lookup_ext_function(const char *name)
